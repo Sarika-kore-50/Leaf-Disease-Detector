@@ -17,7 +17,7 @@ leaf-disease-detector/
 '''
 ## ⚙️ Setup Instructions
 ### Clone the Repository
-git clone https://github.com/YOUR-USERNAME/leaf-disease-detector.git
+git clone https://github.com/Sarika-kore-50/leaf-disease-detector.git
 cd leaf-disease-detector
 ### Create a Virtual Environment (Recommended)
 python -m venv env
