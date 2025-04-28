@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detector</title>
+    <style>
+        /* Reset body and html styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4; /* Light background color */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container to center everything */
+        .container {
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 36px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #FF5733;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Style the form elements */
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Result container style */
+        .result {
+            margin-top: 20px;
+        }
+
+        .result img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌿 Leaf Disease Detector 🌿</h1>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required><br>
+            <button type="submit">Upload</button>
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <h2>Uploaded Image</h2>
+            <img src="{{ url_for('static', filename=filename) }}" alt="Uploaded Image">
+
+            <h3>Disease: {{ prediction['name'] }}</h3>
+            <p><strong>Cause:</strong> {{ prediction['cause'] }}</p>
+            <p><strong>Cure:</strong> {{ prediction['cure'] }}</p>
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
