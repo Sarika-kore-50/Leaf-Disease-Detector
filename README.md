@@ -6,11 +6,11 @@ leaf-disease-detector/
    ├── app.py                     # Flask backend server  
    ├── requirements.txt            # Python libraries needed  
    ├── README.md                # Project description (this file) 
-   ├── static/  
-   │   └── uploadimages/        # Folder for uploaded images 
-   ├── templates/
+   ├── static
+   │   └── uploadimages       # Folder for uploaded images 
+   ├── templates
    │   └── index.html           # Frontend HTML file     
-   └── model training/ 
+   └── model training
       └── plant_disease_recog_model_pwp.keras  # Trained deep learning model  
 
 ## ⚙️ Setup Instructions
