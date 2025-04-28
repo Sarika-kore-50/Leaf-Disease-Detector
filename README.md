@@ -2,16 +2,16 @@
 A Flask-based web application to detect diseases in plant leaves using a trained deep learning model.
 ## 📂 Project Structure
 leaf-disease-detector/
-\\\ │           \\\ 
-\\\ ├── app.py                  # Flask backend server \\\ 
-\\\ ├── requirements.txt        # Python libraries needed \\\ 
-\\\ ├── README.md                # Project description (this file) \\\ 
-\\\ ├── static/ \\\ 
-\\\ │   └── uploadimages/        # Folder for uploaded images \\\ 
-\\\ ├── templates/ \\\ 
-\\\ │   └── index.html           # Frontend HTML file  \\\   
-\\\ └── model training/ \\\ 
-  \\\   └── plant_disease_recog_model_pwp.keras  # Trained deep learning model \\\ 
+ **  │            
+ **  ├── app.py                  # Flask backend server  
+ **  ├── requirements.txt        # Python libraries needed  
+ **  ├── README.md                # Project description (this file) 
+ **  ├── static/  
+ **  │   └── uploadimages/        # Folder for uploaded images 
+ **  ├── templates/
+  ** │   └── index.html           # Frontend HTML file     
+  ** └── model training/ 
+     ** └── plant_disease_recog_model_pwp.keras  # Trained deep learning model  
 
 ## ⚙️ Setup Instructions
 ### Clone the Repository
