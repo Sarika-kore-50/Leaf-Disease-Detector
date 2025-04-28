@@ -3,8 +3,8 @@ A Flask-based web application to detect diseases in plant leaves using a trained
 ## 📂 Project Structure
 leaf-disease-detector/
    │            
-   ├── app.py                  # Flask backend server  
-   ├── requirements.txt        # Python libraries needed  
+   ├── app.py                     # Flask backend server  
+   ├── requirements.txt            # Python libraries needed  
    ├── README.md                # Project description (this file) 
    ├── static/  
    │   └── uploadimages/        # Folder for uploaded images 
